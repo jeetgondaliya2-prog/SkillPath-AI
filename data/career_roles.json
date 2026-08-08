@@ -1,0 +1,56 @@
+[
+  {
+    "role": "Software Developer",
+    "skills": [
+      "C++",
+      "Python",
+      "DSA",
+      "SQL",
+      "Git",
+      "OOP",
+      "DBMS",
+      "Operating Systems",
+      "Computer Networks"
+    ]
+  },
+  {
+    "role": "Data Analyst",
+    "skills": [
+      "Python",
+      "SQL",
+      "Excel",
+      "Pandas",
+      "NumPy",
+      "Statistics",
+      "Power BI",
+      "Data Visualization"
+    ]
+  },
+  {
+    "role": "ML Engineer",
+    "skills": [
+      "Python",
+      "NumPy",
+      "Pandas",
+      "Statistics",
+      "Machine Learning",
+      "Scikit-learn",
+      "Deep Learning",
+      "SQL"
+    ]
+  },
+  {
+    "role": "GenAI Engineer",
+    "skills": [
+      "Python",
+      "Machine Learning",
+      "Deep Learning",
+      "LLM",
+      "LangChain",
+      "RAG",
+      "Vector Database",
+      "Prompt Engineering",
+      "FastAPI"
+    ]
+  }
+]

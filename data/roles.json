@@ -1,0 +1,66 @@
+{
+    "software_developer": {
+        "required_skills": [
+            "C++",
+            "Python",
+            "DSA",
+            "OOP",
+            "DBMS",
+            "SQL",
+            "Operating Systems",
+            "Computer Networks",
+            "Git"
+        ]
+    },
+
+    "data_analyst": {
+        "required_skills": [
+            "Python",
+            "SQL",
+            "Excel",
+            "Pandas",
+            "Statistics",
+            "Data Visualization",
+            "Power BI"
+        ]
+    },
+
+    "ml_engineer": {
+        "required_skills": [
+            "Python",
+            "NumPy",
+            "Pandas",
+            "Statistics",
+            "Machine Learning",
+            "Deep Learning",
+            "SQL",
+            "Git"
+        ]
+    },
+
+    "genai_engineer": {
+        "required_skills": [
+            "Python",
+            "Machine Learning",
+            "Deep Learning",
+            "LLM",
+            "LangChain",
+            "RAG",
+            "Vector Database",
+            "FastAPI",
+            "Git"
+        ]
+    },
+
+    "backend_developer": {
+        "required_skills": [
+            "Python",
+            "FastAPI",
+            "REST API",
+            "SQL",
+            "Database",
+            "Git",
+            "Docker"
+        ]
+    }
+}
