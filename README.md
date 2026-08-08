@@ -1,123 +1,118 @@
-from pathlib import Path
-
-readme = r'''<div align="center">
-
 # 🎯 SkillPath AI
 
-### AI-Powered Career Guidance, Skill Gap Analysis & Personalized Learning Platform
-
-<p>
-  <b>Discover your career path. Understand your skill gaps. Learn what matters next.</b>
-</p>
-
-<p>
-  <a href="#-overview">Overview</a> •
-  <a href="#-features">Features</a> •
-  <a href="#-workflow">Workflow</a> •
-  <a href="#-architecture">Architecture</a> •
-  <a href="#-project-structure">Structure</a> •
-  <a href="#-api-documentation">API</a> •
-  <a href="#-installation">Installation</a> •
-  <a href="#-future-scope">Future Scope</a>
-</p>
-
-<br>
-
-![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-Frontend-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
-![Mistral](https://img.shields.io/badge/Mistral-AI-000000?style=for-the-badge)
-![Pydantic](https://img.shields.io/badge/Pydantic-Validation-E92063?style=for-the-badge)
-![REST API](https://img.shields.io/badge/API-REST-005571?style=for-the-badge)
-
-</div>
+### AI-Powered Career Recommendation, Skill Gap Analysis & Personalized Learning Roadmap
 
 ---
 
-## 🧭 Quick Navigation
+# 📌 Overview
 
-- [🌟 Overview](#-overview)
-- [🎯 Problem Statement](#-problem-statement)
-- [💡 Solution](#-solution)
-- [✨ Features](#-features)
-- [🔄 Workflow](#-workflow)
-- [🏗️ Architecture](#️-architecture)
-- [📁 Project Structure](#-project-structure)
-- [🧩 File-by-File Explanation](#-file-by-file-explanation)
-- [🛠️ Technology Stack](#️-technology-stack)
-- [🔌 API Documentation](#-api-documentation)
-- [🎨 Frontend Design](#-frontend-design)
-- [🤖 AI Layer](#-ai-layer)
-- [📊 Example](#-example)
-- [⚙️ Installation](#️-installation)
-- [▶️ Running the Project](#️-running-the-project)
-- [🧪 Testing](#-testing)
-- [🔐 Security](#-security)
-- [🚀 Future Scope](#-future-scope)
-- [👨‍💻 Author](#-author)
+**SkillPath AI** is an AI-powered **career guidance and skill development platform** designed to help students and aspiring developers identify suitable career paths, analyze their current skills, discover skill gaps, generate personalized career roadmaps, and find relevant learning resources.
+
+Instead of providing generic career advice, SkillPath AI analyzes the user's:
+
+- Education
+- Experience
+- Current skills
+- Projects
+- Target career
+- Resume
+
+and generates a personalized career development path.
+
+The platform helps users answer:
+
+> **"Where am I currently, what skills am I missing, and what should I learn next to reach my target career?"**
+
+SkillPath AI currently supports career paths such as:
+
+### 💻 Software Development
+
+- Software Developer
+- Programming
+- Data Structures & Algorithms
+- Backend Development
+- APIs
+- System Design
+
+### 📊 Data Analytics
+
+- Data Analysis
+- Python
+- SQL
+- Statistics
+- Data Visualization
+- Data Processing
+
+### 🤖 Machine Learning
+
+- Python
+- Machine Learning
+- Data Science
+- Model Development
+- Model Evaluation
+- ML Engineering
+
+### 🧠 Generative AI
+
+- Python
+- LLMs
+- Prompt Engineering
+- RAG
+- AI Application Development
+- LLM APIs
 
 ---
 
-# 🌟 Overview
+# ✨ Features
 
-**SkillPath AI** is an AI-powered career guidance platform built for students, freshers and early-career developers.
-
-The platform takes a user's current profile and transforms it into an actionable career plan.
-
-Instead of simply saying:
-
-> "Learn Python, DSA and SQL."
-
-SkillPath AI tries to answer:
-
-> **"Based on your current skills and target role, what are you missing, how ready are you, what should you learn first, and which resources can help you learn it?"**
-
-The application combines:
-
-- 👤 Student profile analysis
-- 🧠 Skill matching
-- 🎯 Career recommendation
-- 📊 Career readiness scoring
-- ❌ Missing-skill detection
-- 🗺️ AI-generated roadmap
-- 📚 Personalized learning resources
-- 📄 Resume analysis
+- 👤 Student Profile Analysis
+- 🎯 Career Recommendation
+- 🧠 Skill Gap Analysis
+- 📊 Career Readiness Score
+- 🗺️ Personalized AI Roadmap
+- 📚 Learning Resource Recommendation
+- 📄 AI Resume Analyzer
+- 🤖 Mistral AI Integration
+- ⚡ FastAPI Backend
+- 💻 Interactive Streamlit Frontend
+- 🔌 REST API Architecture
+- 🧩 Modular Backend Structure
+- 🔐 Environment Variable Support
+- 📖 Swagger API Documentation
 
 ---
 
-# 🎯 Problem Statement
+# 🧠 How SkillPath AI Works
 
-Students frequently face four major problems:
+### Step 1 — Student Profile
 
-### 1. Career uncertainty
+The user provides information such as:
 
-A student may know several technologies but still not know which career role fits those skills.
+- Name
+- Education
+- Experience
+- Target Career
+- Current Skills
+- Projects
 
-### 2. Invisible skill gaps
-
-Students often learn technologies without comparing them against the actual requirements of their target role.
-
-### 3. Generic roadmaps
-
-Most learning roadmaps are one-size-fits-all and do not start from the student's current level.
-
-### 4. Scattered learning resources
-
-Even after identifying a missing skill, students still have to search multiple platforms to decide what to learn next.
-
-### Our Goal
-
-Build one platform that connects:
+Example:
 
 ```text
-Current Skills
-      ↓
-Career Goal
-      ↓
-Skill Gap
-      ↓
-Readiness
-      ↓
-Personalized Roadmap
-      ↓
-Learning Resources
+Name:
+Jeet
+
+Education:
+B.Tech ECE
+
+Experience:
+Fresher
+
+Target Career:
+GenAI Engineer
+
+Skills:
+Python, C++, SQL, FastAPI
+
+Projects:
+ElectroMind AI
+Insurance Premium Predictor
