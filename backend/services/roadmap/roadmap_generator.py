@@ -2,7 +2,7 @@ import os
 from dotenv import load_dotenv
 from mistralai.client import Mistral
 
-load_dotenv()
+load_dotenv() 
 
 client = Mistral(
     api_key=os.getenv("MISTRAL_API_KEY")
