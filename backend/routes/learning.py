@@ -4,7 +4,7 @@ from pydantic import BaseModel
 from backend.services.learning.resource_recommender import (
     generate_learning_resources
 )
-
+ 
 router = APIRouter(
     prefix="/api/learning",
     tags=["Learning Resources"]
