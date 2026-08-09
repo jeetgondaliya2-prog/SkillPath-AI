@@ -7,7 +7,7 @@
   <img src="https://img.shields.io/badge/Python-FastAPI-blue?style=for-the-badge&logo=python" />
   <img src="https://img.shields.io/badge/Frontend-HTML%20%2F%20CSS%20%2F%20JS-orange?style=for-the-badge" />
   <img src="https://img.shields.io/badge/AI-GenAI-green?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Status-In%20Development-yellow?style=for-the-badge" />
+
 </p>
 
 <p align="center">
