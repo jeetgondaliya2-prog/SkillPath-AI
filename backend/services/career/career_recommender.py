@@ -4,7 +4,7 @@ import os
 
 def load_careers():
 
-    base_dir = os.path.dirname(
+    base_dir = os.path.dirname( 
         os.path.dirname(
             os.path.dirname(
                 os.path.dirname(__file__)
