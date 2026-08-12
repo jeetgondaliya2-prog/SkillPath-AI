@@ -348,8 +348,8 @@ I --> J[🚀 Career Readiness]
 ```
 # 🐳 Docker Architecture
 
----text
-                Docker Compose
+```text
+                                       Docker Compose
                      │
           ┌──────────┴──────────┐
           │                     │
@@ -362,7 +362,9 @@ I --> J[🚀 Career Readiness]
                               │
                               ▼
                          Mistral AI
----
+```
+
+
 
 # 📂 Project Structure
 
