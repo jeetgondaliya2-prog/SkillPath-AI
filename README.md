@@ -349,7 +349,7 @@ I --> J[🚀 Career Readiness]
 # 🐳 Docker Architecture
 
 ```text
-                                       Docker Compose
+              Docker Compose
                      │
           ┌──────────┴──────────┐
           │                     │
