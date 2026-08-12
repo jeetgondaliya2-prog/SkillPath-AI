@@ -346,98 +346,61 @@ I --> J[🚀 Career Readiness]
                            │     Base         │
                            └─────────────────┘
 ```
+# 🐳 Docker Architecture
 
 ---
+                Docker Compose
+                     │
+          ┌──────────┴──────────┐
+          │                     │
+          ▼                     ▼
+ ┌─────────────────┐   ┌─────────────────┐
+ │ Frontend        │   │ Backend         │
+ │ Streamlit       │   │ FastAPI         │
+ │ Port: 8501      │──▶│ Port: 8000      │
+ └─────────────────┘   └─────────────────┘
+                              │
+                              ▼
+                         Mistral AI
 
 # 📂 Project Structure
 
 ```text
 SkillPath-AI/
 │
-├── 📁 frontend/
-│   │
-│   ├── 📁 assets/
-│   │   ├── images/
-│   │   ├── icons/
-│   │   └── fonts/
-│   │
-│   ├── 📁 css/
-│   │   ├── style.css
-│   │   ├── dashboard.css
-│   │   └── responsive.css
-│   │
-│   ├── 📁 js/
-│   │   ├── main.js
-│   │   ├── dashboard.js
-│   │   ├── roadmap.js
-│   │   └── api.js
-│   │
-│   ├── index.html
-│   ├── dashboard.html
-│   ├── profile.html
-│   ├── analysis.html
-│   └── roadmap.html
-│
 ├── 📁 backend/
 │   │
-│   ├── 📁 app/
-│   │   │
-│   │   ├── __init__.py
-│   │   ├── main.py
-│   │   │
-│   │   ├── 📁 routes/
-│   │   │   ├── __init__.py
-│   │   │   ├── profile.py
-│   │   │   ├── analysis.py
-│   │   │   ├── roadmap.py
-│   │   │   └── resources.py
-│   │   │
-│   │   ├── 📁 schemas/
-│   │   │   ├── __init__.py
-│   │   │   ├── user.py
-│   │   │   ├── profile.py
-│   │   │   └── analysis.py
-│   │   │
-│   │   ├── 📁 services/
-│   │   │   ├── ai_service.py
-│   │   │   ├── career_service.py
-│   │   │   ├── skill_service.py
-│   │   │   └── roadmap_service.py
-│   │   │
-│   │   ├── 📁 models/
-│   │   │   ├── user.py
-│   │   │   ├── skill.py
-│   │   │   └── career.py
-│   │   │
-│   │   ├── 📁 database/
-│   │   │   ├── connection.py
-│   │   │   └── crud.py
-│   │   │
-│   │   └── 📁 utils/
-│   │       ├── prompts.py
-│   │       └── helpers.py
+│   ├── app.py
+│   │
+│   ├── 📁 routes/
+│   │   ├── profile.py
+│   │   ├── career.py
+│   │   └── roadmap.py
+│   │
+│   ├── 📁 services/
+│   │   ├── ai_service.py
+│   │   └── skill_analyzer.py
 │   │
 │   ├── requirements.txt
-│   └── .env
+│   └── Dockerfile
 │
-├── 📁 ai/
-│   ├── prompts/
-│   ├── models/
-│   ├── embeddings/
-│   └── knowledge_base/
+├── 📁 frontend/
+│   │
+│   ├── app.py
+│   ├── requirements.txt
+│   └── Dockerfile
 │
-├── 📁 database/
-│   ├── schema.sql
-│   └── seed.sql
+├── 📁 data/
+│   └── roles.json
 │
-├── 📁 tests/
-│   ├── test_profile.py
-│   ├── test_analysis.py
-│   └── test_roadmap.py
+├── 📁 knowledge_base/
 │
+├── .env
 ├── .gitignore
-├── README.md
-└── LICENSE
+├── .dockerignore
+├── docker-compose.yml
+├── LICENSE
+└── README.md
 ```
 
 ---
