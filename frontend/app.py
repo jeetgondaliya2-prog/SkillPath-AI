@@ -1,14 +1,21 @@
 import streamlit as st
 import requests
+import os
 
 
 # ----------------------------- 
 # Configuration
 # -----------------------------
 
-API_URL = "http://127.0.0.1:8000/api/analyze"
-RESUME_API_URL = "http://127.0.0.1:8000/api/resume/analyze"
-LEARNING_API_URL = "http://127.0.0.1:8000/api/learning/recommend"
+BACKEND_URL = os.getenv(
+    "BACKEND_URL",
+    "http://backend:8000"
+)
+API_URL = f"{BACKEND_URL}/api/analyze"
+
+RESUME_API_URL = f"{BACKEND_URL}/api/resume/analyze"
+
+LEARNING_API_URL = f"{BACKEND_URL}/api/learning/recommend"
 
 
 # -----------------------------
@@ -70,8 +77,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.markdown(
-    '<div class="subtitle">AI-powered career roadmap and skill gap analyzer</div>',
+st.markdown(    '<div class="subtitle">AI-powered career roadmap and skill gap analyzer</div>',
     unsafe_allow_html=True
 )
 
